@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Tailwindcss Site</title>
+  </head>
+  <body>
+    <section class="bg-gray-800 py-2">
+      <div
+        class="container mx-auto flex flex-col items-center md:flex-row md:space-x-5 text-sm"
+      >
+        <a href="tel:+16134087601" class="text-white"
+          ><i class="fa-solid fa-phone"></i> 613-408-7601</a
+        >
+        <a href="mailto:khbasementrenos@gmail.com" class="text-white"
+          ><i class="fa-solid fa-envelope"></i> khbasementrenos@gmail.com</a
+        >
+      </div>
+    </section>
+
+    <nav class="relative container mx-auto flex items-center justify-between">
+      <img src="./images/logo.png" alt="Our logo" class="w-24" />
+
+      <ul class="hidden sm:flex space-x-4">
+        <li>Home</li>
+        <li>Start Your Basement</li>
+      </ul>
+
+      <i
+        id="nav-toggler"
+        class="fa-solid fa-bars block sm:hidden mr-5 text-xl cursor-pointer"
+      ></i>
+
+      <ul
+        id="mobile-nav"
+        class="absolute -bottom-[4.5rem] z-50 left-1/2 -translate-x-1/2 hidden sm:hidden bg-white border-t-2 border-brand p-2 space-y-2 transition-all duration-300 ease-in"
+      >
+        <li>Home</li>
+        <li>Start Your Basement</li>
+      </ul>
+    </nav>
+
+    <header
+      id="hero"
+      class="relative h-[83vh] flex items-center justify-center"
+    >
+      <div class="h-full w-full bg-black/50 absolute"></div>
+      <div
+        class="flex flex-col items-center z-20 justify-start text-center text-white max-w-2xl"
+      >
+        <h1 class="font-bold text-4xl md:text-6xl">
+          Your Basement Can Be This Beautiful
+        </h1>
+        <p class="mt-1 text-gray-200">
+          K&H Basements is a leading basement finishing company in Ottawa.
+          Striving to deliver exceptional basement remodeling services to
+        </p>
+        <button class="primary-btn">Start Your Basement</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Our services -->
+      <section class="bg-gray-800 text-white py-10">
+        <div class="max-w-4xl mx-auto px-2">
+          <h2 class="text-center text-3xl font-bold">
+            <span class="text-brand">K&H</span> Turns Unfinished Basements Into
+            Fabulous Spaces!
+          </h2>
+          <p class="text-center mt-2">
+            An unfinished basement is wasted space you could be enjoying. In
+            about 40 days, K&H Basements can transform your downstairs into a
+            new guest bedroom for your favorite visitors, a theatre for fun
+            movie nights and popcorn, your very own home gym, and more. Your
+            home value will soar, and your family will thank you!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7 mt-8">
+          <div>
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/fireplace.jpg" />
+              <span class="img-label">Fireplaces</span>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:col-span-3"
+          >
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/theatre.png" />
+              <span class="img-label">Theatre Room</span>
+            </div>
+
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/gym.jpg" />
+              <span class="img-label">GYM</span>
+            </div>
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/bathroom.jpg" />
+              <span class="img-label">Bathroom</span>
+            </div>
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/kitchen.jpg" />
+              <span class="img-label">Kitchen</span>
+            </div>
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/rec-room.jpg" />
+              <span class="img-label">Rec Room</span>
+            </div>
+            <div class="relative h-fit w-fit">
+              <img src="./images/services/garage.jpeg" />
+              <span class="img-label">Garage</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hook section -->
+
+      <section
+        id="hook"
+        class="relative h-[83vh] flex items-center justify-center"
+      >
+        <div class="h-full w-full bg-black/50 absolute"></div>
+        <div
+          class="flex flex-col items-center z-20 justify-start text-center text-white max-w-3xl"
+        >
+          <h2 class="font-bold text-3xl md:text-5xl">
+            FINISH YOUR BASEMENT IN 6-8 WEEKS
+          </h2>
+          <p class="mt-1">
+            K&H finishes the average basement project in 6-8 weeks!
+          </p>
+          <button class="primary-btn">Start Your Basement</button>
+        </div>
+      </section>
+
+      <!-- transformation section -->
+      <section class="container mx-auto py-10 px-5">
+        <h3 class="text-brand text-2xl md:text-4xl font-bold">
+          TRANSFORM YOUR BASEMENT TODAY
+        </h3>
+
+        <div class="mt-8 space-y-12">
+          <div class="flex flex-col md:flex-row md:space-x-20">
+            <strong class="text-xl font-extrabold">WHAT YOU WANT</strong>
+
+            <ul class="list-disc mt-5 md:mt-0">
+              <li>
+                <span class="text-brand">Speed:</span> Fast-Track Your Dream
+                Basement with K&H
+              </li>
+              <li>
+                <span class="text-brand">Value:</span> Elevate Your Home’s Worth
+                with K&H’s Finishing Touch
+              </li>
+              <li>
+                <span class="text-brand">Joy:</span> Rejoice in Your New Space
+                with K&H’s Basement Remodeling
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col md:flex-row md:space-x-20">
+            <strong class="text-xl font-extrabold">WHAT YOU WANT</strong>
+
+            <ul class="list-disc mt-5 md:mt-0">
+              <li>
+                <span class="text-brand">Speed:</span> Fast-Track Your Dream
+                Basement with K&H
+              </li>
+              <li>
+                <span class="text-brand">Value:</span> Elevate Your Home’s Worth
+                with K&H’s Finishing Touch
+              </li>
+              <li>
+                <span class="text-brand">Joy:</span> Rejoice in Your New Space
+                with K&H’s Basement Remodeling
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col md:flex-row md:space-x-20">
+            <strong class="text-xl font-extrabold">WHAT YOU WANT</strong>
+
+            <ul class="list-disc mt-5 md:mt-0">
+              <li>
+                <span class="text-brand">Speed:</span> Fast-Track Your Dream
+                Basement with K&H
+              </li>
+              <li>
+                <span class="text-brand">Value:</span> Elevate Your Home’s Worth
+                with K&H’s Finishing Touch
+              </li>
+              <li>
+                <span class="text-brand">Joy:</span> Rejoice in Your New Space
+                with K&H’s Basement Remodeling
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- why -->
+      <section class="py-8">
+        <div class="bg-gray-800 max-w-4xl mx-auto px-8 py-4">
+          <div class="flex flex-col md:flex-row justify-center">
+            <h3 class="text-brand text-3xl md:text-5xl font-bold">
+              WHY FINISH YOUR BASEMENT?
+            </h3>
+
+            <div class="mt-5 md:mt-0">
+              <p class="text-white">
+                DISCOVER THE POSSIBILITIES OF YOUR BASEMENT WITH US
+              </p>
+              <button class="primary-btn">Start Your Basement</button>
+            </div>
+          </div>
+
+          <!-- 3 pics grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-5 text-white mt-10 pb-10"
+          >
+            <div class="flex space-x-2">
+              <img
+                src="https://khbasementrenos.ca/wp-content/uploads/2023/03/home-remodelling-38a.jpg"
+                alt=""
+                class="w-24 h-24 object-cover"
+              />
+              <div>
+                <h4 class="font-semibold">ADD SPACE</h4>
+                <span class="text-gray-300 text-sm"
+                  >Quickly add square footage to your existing home without
+                  adding on.</span
+                >
+              </div>
+            </div>
+
+            <div class="flex space-x-2">
+              <img
+                src="https://khbasementrenos.ca/wp-content/uploads/2023/03/home-remodelling-38a.jpg"
+                alt=""
+                class="w-24 h-24 object-cover"
+              />
+              <div>
+                <h4 class="font-semibold">ADD SPACE</h4>
+                <span class="text-gray-300 text-sm"
+                  >Quickly add square footage to your existing home without
+                  adding on.</span
+                >
+              </div>
+            </div>
+
+            <div class="flex space-x-2">
+              <img
+                src="https://khbasementrenos.ca/wp-content/uploads/2023/03/home-remodelling-38a.jpg"
+                alt=""
+                class="w-24 h-24 object-cover"
+              />
+              <div>
+                <h4 class="font-semibold">ADD SPACE</h4>
+                <span class="text-gray-300 text-sm"
+                  >Quickly add square footage to your existing home without
+                  adding on.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- work -->
+      <section class="bg-gray-800 py-8">
+        <h2 class="text-center font-bold text-4xl text-white">
+          Our latest work
+        </h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 px-10 mt-8"
+        >
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/IMG_7063-980x735.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/IMG_7059-980x735.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+          <img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          /><img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.11.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          /><img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/IMG_7068-980x735.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          /><img
+            src="https://khbasementrenos.ca/wp-content/uploads/2023/03/photo_2023-03-26-22.50.07.jpeg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-100 py-8 px-4">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <img src="./images/logo.png" alt="Our logo" class="w-32" />
+
+          <p>
+            K&H Basements is a leading basement finishing company in Ottawa. We
+            strive to deliver exceptional basement remodeling services to
+            homeowners. Contact us today to get started with your basement
+            project!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-lg">Our Specialties</h3>
+
+          <ol class="text-gray-600 list-[upper-roman] pl-6">
+            <li>Family Rooms</li>
+            <li>Kitchenettes</li>
+            <li>Theater Rooms</li>
+            <li>Family Rooms</li>
+            <li>Kitchenettes</li>
+            <li>Theater Rooms</li>
+            <li>Family Rooms</li>
+            <li>Kitchenettes</li>
+            <li>Theater Rooms</li>
+          </ol>
+        </div>
+
+        <div>
+          <p class="text-2xl">Setup a Free Design or Build Consultation</p>
+
+          <button class="primary-btn">Start Your Basement</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-gray-800 py-5 px-2">
+      <div
+        class="container mx-auto text-white flex flex-col md:flex-row justify-between items-center"
+      >
+        <p class="text-center">
+          Copyrights © 2023 K&H Basements | Website By Telickers
+        </p>
+
+        <div class="flex space-x-4 text-xl mt-2 md:mt-0">
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- go up btn -->
+    <button id="goTop" class="translate-x-full bg-gray-500 fixed right-0 bottom-20 py-1 px-3 rounded-l-md text-white transition-all duration-300 ease-in-out z-50">
+
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
